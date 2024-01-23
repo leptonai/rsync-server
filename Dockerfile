@@ -13,9 +13,6 @@ COPY entrypoint.sh /entrypoint.sh
 
 EXPOSE 8873
 USER root
-RUN chown 65534:65534 /etc
-RUN chown 65534:65534 /usr/bin
-USER 65534:65534
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["rsync_server"]
