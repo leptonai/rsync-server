@@ -16,6 +16,8 @@ max connections = 10
 port = 8873
 
 [volume]
+	uid = root
+	gid = root
 	hosts deny = *
 	hosts allow = ${ALLOW}
 	read only = false
